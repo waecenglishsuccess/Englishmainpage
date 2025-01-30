@@ -3,35 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Accounting Cycle Quiz</title>
+    <title>English Pro Academy</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>The Accounting Cycle Quiz</h1>
-        <div id="quiz-container">
-            <div id="question-container">
-                <h2 id="question">Loading question...</h2>
-                <div id="options-container">
-                    <!-- Options will be dynamically added here -->
-                </div>
-            </div>
-            <div id="timer-container">
-                <span id="timer">10</span> seconds left
-            </div>
-            <button id="next-button" class="hidden">Next Question</button>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">English Pro Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/englishvideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://englishquiz101.github.io/englishquiz/" target="_blank">Test Your Skills</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://englishquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
         </div>
+    </nav>
+
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
     </div>
 
-    <!-- Donate Section -->
-    <div class="donate-section">
-        <h2>Please Donate</h2>
-        <p>Your support helps us maintain this platform and continue offering free education.</p>
-        <div class="donate-info">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSX1j8_1o20igEk7AJyDYrJ_cH3dBXBr6jwuw&usqp=CAU" alt="Wave Logo" class="wave-logo">
-            <p>Phone Number: <strong>3709558</strong></p>
+    <div class="container">
+        <h1>Welcome to English Pro Academy</h1>
+        <p>Your comprehensive online English language learning platform. Explore various aspects of English with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Tailored learning paths for students of all levels to improve their English skills.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced educators and language experts.</p>
+            </div>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, quizzes, and downloadable resources.</p>
+            </div>
+        </div>
+
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Help Us Improve Access to Language Education</h2>
+            <div class="donation-image-container">
+                <img src="https://www.educationcannotwait.org/sites/default/files/styles/de2e_standard/public/2022-03/DRC_banner%20%281%29.jpg"
+                     alt="Students learning in a classroom" 
+                     class="donation-image"
+                     loading="lazy">
+            </div>
+            <p class="donation-description">
+                Over 75% of learners globally struggle with English proficiency. Your support can help us provide free tools and resources to improve education worldwide.
+            </p>
+        </section>
+    </div>
+
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
+            </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Practice Problems</li>
+                </ul>
+                <a href="https://t.me/englishhub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
         </div>
     </div>
+    <footer class="footer">
+        <p>&copy; 2024 English Pro Academy. All Rights Reserved.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
